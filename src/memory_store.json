@@ -1,0 +1,18 @@
+{
+  "conversations": [
+    {
+      "query": "What is agentic AI?",
+      "response": "# Research Summary for: **What is agentic AI?**\n\n## Overview\n\nAgentic AI systems use autonomous agents that can plan, act, and collaborate. They often include a controller, memory, and tools.\n\n## Key Claims\n\n1. Agentic AI systems use autonomous agents that can plan, act, and collaborate\n\n## Supporting Evidence\n\n1. They often include a controller, memory, and tools\n\n## Sources Consulted\n\n- 1. Introduction to Agentic AI Systems\n"
+    }
+  ],
+  "facts": [
+    {
+      "fact": "Consulted source: Introduction to Agentic AI Systems",
+      "source": "Introduction to Agentic AI Systems"
+    },
+    {
+      "fact": "Agentic AI systems use autonomous agents that can plan, act, and collaborate",
+      "source": "analysis_summary"
+    }
+  ]
+}

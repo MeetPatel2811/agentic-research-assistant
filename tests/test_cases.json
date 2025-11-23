@@ -1,0 +1,17 @@
+[
+  {
+    "id": "tc1",
+    "query": "What are agentic AI systems?",
+    "expected_keywords": ["agentic", "controller", "agents"]
+  },
+  {
+    "id": "tc2",
+    "query": "How does multi-agent orchestration work?",
+    "expected_keywords": ["multi-agent", "orchestration", "controller"]
+  },
+  {
+    "id": "tc3",
+    "query": "How is reinforcement learning used to improve agents?",
+    "expected_keywords": ["reinforcement", "learning", "improve"]
+  }
+]
