@@ -1,0 +1,30 @@
+# Core Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+pydantic==2.5.0
+
+# Frontend
+streamlit==1.28.0
+
+# HTTP Client
+requests==2.31.0
+
+# NLP & Advanced Processing
+spacy==3.7.2
+en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+
+# Web Search (No API Key Required!)
+duckduckgo-search==4.1.1
+
+# Database
+# SQLite is built into Python, no extra package needed
+
+# Utilities
+python-dotenv==1.0.0
+
+# Type Checking (Optional but recommended)
+typing-extensions==4.8.0
+
+# Testing (Optional)
+pytest==7.4.3
+pytest-asyncio==0.21.1
