@@ -1,34 +1,102 @@
+# =========================================
 # Python
+# =========================================
 __pycache__/
-*.py[cod]
-*.class
-*.so
-.Python
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual Environment
 venv/
 env/
 ENV/
-*.egg-info/
-.pytest_cache/
+.venv/
 
-# Database
+# Build / Distribution
+build/
+dist/
+site/
+*.egg-info/
+
+# Byte-compiled
+*.py[cod]
+*$py.class
+
+# =========================================
+# Project-specific
+# =========================================
+
+# Memory files
+src/memory/memory_store.json
+
+# SQLite Databases & backups
 *.db
 *.sqlite
 *.sqlite3
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# System files
-.DS_Store
-Thumbs.db
+*.db-shm
+*.db-wal
 
 # Logs
+logs/
 *.log
 
-# Large files
-*.mp4
-*.mov
-*.avi
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Output diagrams
+*.png
+*.svg
+*.pdf
+
+# API test outputs
+tests/output/
+tests/temp/
+
+# =========================================
+# Streamlit
+# =========================================
+.streamlit/
+.streamlit/cache/
+.streamlit/secrets.toml
+
+# =========================================
+# FastAPI / Uvicorn
+# =========================================
+*.pid
+*.pid.lock
+
+# =========================================
+# IDE / Editor
+# =========================================
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# MacOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================================
+# Misc
+# =========================================
+*.bak
+*.swp
+*.swo
+*~

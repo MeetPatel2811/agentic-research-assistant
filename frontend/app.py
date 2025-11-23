@@ -38,14 +38,14 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="main-header">🤖 Agentic Research Assistant</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"> Agentic Research Assistant</div>', unsafe_allow_html=True)
 
 # Add helpful description
 st.markdown("""
 Welcome to the **Agentic Research Assistant**! Ask any research question and our multi-agent system will:
-- 🔍 Search for relevant information
-- 📊 Analyze and extract key claims
-- ✍️ Generate a comprehensive report
+-  Search for relevant information
+-  Analyze and extract key claims
+-  Generate a comprehensive report
 """)
 
 st.markdown("---")
@@ -60,7 +60,7 @@ query = st.text_area(
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    run_button = st.button("🚀 Run Research", use_container_width=True, type="primary")
+    run_button = st.button(" Run Research", use_container_width=True, type="primary")
 
 if run_button:
     if query.strip():
@@ -69,20 +69,20 @@ if run_button:
         status_text = st.empty()
         
         # Step 1: Validate query
-        status_text.markdown('<div class="status-box info">🔄 Validating query...</div>', unsafe_allow_html=True)
+        status_text.markdown('<div class="status-box info"> Validating query...</div>', unsafe_allow_html=True)
         progress_bar.progress(10)
         time.sleep(0.3)
         
         # Step 2: Research phase
-        status_text.markdown('<div class="status-box info">🔍 Researching sources...</div>', unsafe_allow_html=True)
+        status_text.markdown('<div class="status-box info"> Researching sources...</div>', unsafe_allow_html=True)
         progress_bar.progress(30)
         
         # Step 3: Analysis phase
-        status_text.markdown('<div class="status-box info">📊 Analyzing information...</div>', unsafe_allow_html=True)
+        status_text.markdown('<div class="status-box info"> Analyzing information...</div>', unsafe_allow_html=True)
         progress_bar.progress(60)
         
         # Step 4: Writing phase
-        status_text.markdown('<div class="status-box info">✍️ Generating report...</div>', unsafe_allow_html=True)
+        status_text.markdown('<div class="status-box info"> Generating report...</div>', unsafe_allow_html=True)
         progress_bar.progress(80)
         
         try:
@@ -91,7 +91,7 @@ if run_button:
             
             # Complete
             progress_bar.progress(100)
-            status_text.markdown('<div class="status-box success">✅ Research completed!</div>', unsafe_allow_html=True)
+            status_text.markdown('<div class="status-box success"> Research completed!</div>', unsafe_allow_html=True)
             time.sleep(0.5)
             
             # Clear progress indicators
@@ -113,15 +113,15 @@ if run_button:
         except Exception as e:
             progress_bar.empty()
             status_text.empty()
-            st.error(f"❌ Error: {str(e)}")
+            st.error(f" Error: {str(e)}")
             st.info("Please try again or check if the backend server is running.")
     else:
-        st.warning("⚠️ Please enter a research question.")
+        st.warning(" Please enter a research question.")
 
 st.markdown("---")
 
 # Sidebar: Recent history with better formatting
-st.sidebar.header("📚 Recent Queries")
+st.sidebar.header(" Recent Queries")
 
 try:
     conn = sqlite3.connect(DB_PATH)
@@ -145,9 +145,9 @@ except Exception as e:
 st.sidebar.markdown("---")
 st.sidebar.markdown("""
 **System Status:**  
-✅ Backend: Running  
-✅ Database: Connected  
-✅ Agents: Ready  
+ Backend: Running  
+ Database: Connected  
+ Agents: Ready  
 
-Built with ❤️ for INFO 7375
+Built with  for INFO 7375
 """)

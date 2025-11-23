@@ -27,6 +27,10 @@
     {
       "query": "How would you evaluate whether adding more specialized agents improves performance versus increasing complexity?",
       "response": "# Research Summary for: **How would you evaluate whether adding more specialized agents improves performance versus increasing complexity?**\n\n## Overview\n\nMulti-agent orchestration coordinates multiple specialized agents. A controller delegates tasks, and agents use tools to complete subtasks. Agentic AI systems use autonomous agents that can plan, act, and collaborate. They often include a controller, memory, and tools.\n\n## Key Claims\n\n1. Agentic AI systems use autonomous agents that can plan, act, and collaborate\n\n## Supporting Evidence\n\n1. Multi-agent orchestration coordinates multiple specialized agents\n2. A controller delegates tasks, and agents use tools to complete subtasks\n3. They often include a controller, memory, and tools\n\n## Sources Consulted\n\n- 1. Multi-Agent Orchestration Basics\n- 2. Introduction to Agentic AI Systems\n"
+    },
+    {
+      "query": "What UI features improve interpretability of agent decisions for users",
+      "response": "# Research Summary for: **What UI features improve interpretability of agent decisions for users**\n\n## Overview\n\nReinforcement learning can be used to improve an agent's behavior over time. Feedback signals can adjust strategies or prompt configurations. Research assistants should cross-check sources, extract claims, and map evidence to those claims for improved reliability. Agentic AI systems use autonomous agents that can plan, act, and collaborate.\n\n## Key Claims\n\n1. Reinforcement learning can be used to improve an agent's behavior over time.\n2. Feedback signals can adjust strategies or prompt configurations.\n3. Agentic AI systems use autonomous agents that can plan, act, and collaborate.\n\n## Supporting Evidence\n\n1. Research assistants should cross-check sources, extract claims, and map evidence to those claims for improved reliability.\n\n## Sources Consulted\n\n- 1. Reinforcement Learning for Improvement\n- 2. Fact-Checking in Research Assistants\n- 3. Introduction to Agentic AI Systems\n"
     }
   ],
   "facts": [
@@ -88,6 +92,30 @@
     },
     {
       "fact": "Agentic AI systems use autonomous agents that can plan, act, and collaborate",
+      "source": "analysis_summary"
+    },
+    {
+      "fact": "Consulted source: Reinforcement Learning for Improvement",
+      "source": "Reinforcement Learning for Improvement"
+    },
+    {
+      "fact": "Consulted source: Fact-Checking in Research Assistants",
+      "source": "Fact-Checking in Research Assistants"
+    },
+    {
+      "fact": "Consulted source: Introduction to Agentic AI Systems",
+      "source": "Introduction to Agentic AI Systems"
+    },
+    {
+      "fact": "Reinforcement learning can be used to improve an agent's behavior over time.",
+      "source": "analysis_summary"
+    },
+    {
+      "fact": "Feedback signals can adjust strategies or prompt configurations.",
+      "source": "analysis_summary"
+    },
+    {
+      "fact": "Agentic AI systems use autonomous agents that can plan, act, and collaborate.",
       "source": "analysis_summary"
     }
   ]

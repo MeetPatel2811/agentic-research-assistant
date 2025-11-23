@@ -61,8 +61,43 @@ Extracts structured insights from research summaries.
 ---
 
 # 🏗️ Architecture
+flowchart TD
 
-![Architecture Diagram](docs/architecture_diagram.png)
+    %% FRONTEND LAYER
+    U[User] --> UI[Streamlit Frontend<br/>frontend/app.py]
+
+    %% API LAYER
+    UI -->|POST /query| API[FastAPI Server<br/>api/main.py]
+
+    %% ORCHESTRATION LAYER
+    API --> ORCH[Orchestrator<br/>src/workflow/orchestrator.py]
+
+    %% CONTROLLER
+    ORCH --> CTRL[Controller Agent<br/>src/controller/controller.py]
+
+    %% AGENTS
+    CTRL --> RA[Research Agent<br/>src/agents/research_agent.py]
+    CTRL --> AA[Analysis Agent<br/>src/agents/analysis_agent.py]
+    CTRL --> WA[Writer Agent<br/>src/agents/writer_agent.py]
+
+    %% TOOLS
+    RA --> WS[Web Search Tool<br/>src/tools/built_in/web_search_tool.py]
+    AA --> SM[Summarizer Tool<br/>src/tools/built_in/summarizer_tool.py]
+    AA --> CE[Custom Claim–Evidence Extractor<br/>src/tools/custom/claim_evidence_extractor.py]
+    WA --> FM[Formatter Tool<br/>src/tools/built_in/formatter_tool.py]
+
+    %% MEMORY SYSTEM
+    CTRL --> MEM[Memory Manager<br/>src/memory/memory_manager.py]
+    MEM --> JSON[(memory_store.json)]
+    API --> DB[(SQLite DB\nhistory.db)]
+
+    %% RL FEEDBACK LOOP
+    CTRL --> RL[Feedback Loop<br/>src/rl/feedback_loop.py]
+    RL --> CTRL
+
+    %% RETURN PATH
+    ORCH --> API --> UI --> U
+
 
 ### 🧩 Agents
 | Agent | Role |
