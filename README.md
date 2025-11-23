@@ -124,31 +124,31 @@ flowchart TD
 
 # 🚀 Quick Start
 
-## ✅ **1. Clone the repository**
+##  **1. Clone the repository**
 ```bash
 git clone <your-repo-url>
 cd agentic_system
 ```
 
-## ✅ **2. Create and activate virtual environment**
+##  **2. Create and activate virtual environment**
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-## ✅ **3. Install dependencies**
+##  **3. Install dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-## ✅ **4. Run the FastAPI backend**
+##  **4. Run the FastAPI backend**
 ```bash
 uvicorn api.main:app --reload
 ```
 Visit API docs at:  
 👉 http://127.0.0.1:8000/docs
 
-## ✅ **5. Run the Streamlit frontend**
+##  **5. Run the Streamlit frontend**
 Open a new terminal tab:
 ```bash
 source venv/bin/activate
@@ -265,22 +265,6 @@ Outputs:
 
 ---
 
-# 🎯 Assignment Compliance
-
-| Requirement | Status |
-|------------|--------|
-| Controller Agent | ✅ DONE |
-| Specialized Agents (3+) | ✅ DONE |
-| Built-in Tools (3+) | ✅ DONE |
-| Custom Tool | ✅ DONE |
-| Memory System | ✅ DONE |
-| Orchestration | ✅ DONE |
-| Feedback Loop | ✅ DONE |
-| Testing | ✅ DONE |
-| Frontend UI | ✅ DONE |
-| Full Documentation | ✅ DONE |
-
-This project **exceeds** the assignment expectations.
 
 ---
 
