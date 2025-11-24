@@ -306,8 +306,6 @@ Modify `/frontend/app.py`
 
 ---
 
-# 📜 License
-MIT License
 
 **Built with ❤️ as part of INFO 7375 – Building Agentic Systems**
 
